@@ -1,0 +1,46 @@
+﻿{
+  "name": "dsh-mood",
+  "version": "0.1.0",
+  "private": true,
+  "description": "模拟心情指标：给 DeepSeek Harness 加一个可解释的交互状态机（六维状态 + 语气注入 + 右栏面板）。",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./client.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-storage-domain": "*",
+    "@deepseek-ai/schemastery": "*"
+  },
+  "keywords": [
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "mood",
+    "persona",
+    "affective",
+    "dashboard"
+  ],
+  "author": "dsh-mood contributors",
+  "license": "MIT",
+  "homepage": "https://github.com/lulu23316/dsh-mood",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lulu23316/dsh-mood.git"
+  }
+}

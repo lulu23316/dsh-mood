@@ -1,0 +1,33 @@
+# 依赖与构建产物
+node_modules/
+pnpm-lock.yaml
+*.log
+
+# 本地配置（含机器相关路径、凭证）
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.local
+
+# 备份 / 草稿 / 临时文件
+*.bak
+*.bak-*
+*.broken-*
+*.orig
+*.tmp
+tmp/
+.bak/
+
+# 测试与运行产物
+coverage/
+test-output/
+*.jsonl
+mood.json
+mood-debug.json
+mood-load.json
+
+# 编辑器
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,6 @@
+# 本包自带的 bundle 层：只负责把 mood 这个实例装进来。
+# 注意：insert 条目只认 id / name，不能带 config（带了会被整体丢掉）。
+# 配置默认值在 src/index.js 的 DEFAULTS 里；启用/调参走 profile 的 cordis.patch.yml。
+- insert:
+    - id: mood
+      name: dsh-mood
