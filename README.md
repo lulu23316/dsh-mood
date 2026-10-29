@@ -4,11 +4,11 @@ dsh-mood · 鱼鱼心情引擎
 
 让 DSH 背后的赛博世界更有温度。
 
-![心情面板](docs/images/console.jpg)
+![心情面板](docs/images/console.png)
 
-![外观设置](docs/images/appearance.jpg)
+![外观设置](docs/images/appearance.png)
 
-![鱼鱼日记](docs/images/diary.jpg)
+![鱼鱼日记](docs/images/diary.png)
 
 
 
